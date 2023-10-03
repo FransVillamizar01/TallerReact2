@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav {
+  background-color: #444444;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para la barra de navegación */
+.nav {
+  background-color: #444444;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los elementos de la lista */
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  font-size: 1.2rem; /* Aumenta el tamaño del texto */
+  margin-bottom: 10px; /* Agrega separación entre elementos */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Agrega estilos de hover a los elementos de la lista */
+.nav ul li:hover {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #15ff00;
+  padding: 20px;
+  background-color: #797979;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease; /* Agrega una transición suave al efecto de hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Cambia el tamaño de la tarjeta al pasar el mouse */
+}
+
+/* Estilos para el botón "Mostrar productos" */
+.button {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Quita el borde */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Agrega una transición de color al botón */
+
+  /* Alinea el botón en el centro del contenedor */
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px; /* Agrega espacio superior */
+}
+
+/* Estilos de hover para el botón "Mostrar productos" */
+.button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
